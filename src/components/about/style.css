@@ -1,0 +1,22 @@
+.about-section{
+    background-color: var(--lime-green);
+}
+.about-section video{
+    border: 2px solid var(--green-700);
+    border-radius: 20px;
+    height: 100%;
+}
+.about-section ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 20px;
+}
+.about-section ul li{
+    padding: 5px 10px;
+    background-color: var(--green-700);
+    color: #fff;
+    border-radius: 100px;
+}

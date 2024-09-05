@@ -1,0 +1,149 @@
+:root {
+  --green-500: #4f5b51;
+  --green-900: #2a3f2d;
+  --orange-700: #ff8a4a;
+  --green-700: #2c4530;
+  --okhra: #fdf8e9;
+  --lime-green: #a2de64;
+  --orange-500: #ffce98;
+  --neutrals-900: #111827;
+  --neutrals-800: #1f2937;
+  --neutrals-700: #374151;
+  --neutrals-600: #4b5563;
+  --neutrals-500: #6a7280;
+  --neutrals-400: #9ba3af;
+  --neutrals-300: #d1d5da;
+  --neutrals-200: #e4e7eb;
+  --neutrals-100: #f2f4f6;
+  --neutrals-50-501: #f9fafb;
+  --error-01: #ff6b6b;
+  --error-02: #ffa8a8;
+  --error-03: #ffe3e3;
+  --warning-01: #fcc419;
+  --warning-02: #ffe066;
+  --warning-03: #fff3bf;
+  --success-01: #88cf51;
+  --success-02: #aae98c;
+  --success-03: #ddf9d3;
+  --info-01: #339af0;
+  --info-02: #74c0fc;
+  --info-03: #d0ebff;
+  --white-100: white;
+  --white-88: rgba(255, 255, 255, .88);
+  --white-80: rgba(255, 255, 255, .8);
+  --white-72: rgba(255, 255, 255, .72);
+  --white-64: rgba(255, 255, 255, .64);
+  --white-56: rgba(255, 255, 255, .56);
+  --white-48: rgba(255, 255, 255, .48);
+  --white-40: rgba(255, 255, 255, .4);
+  --white-32: rgba(255, 255, 255, .32);
+  --white-24: rgba(255, 255, 255, .24);
+  --white-16: rgba(255, 255, 255, .16);
+  --white-8-89: rgba(255, 255, 255, .08);
+  --black-4-49: rgba(0, 0, 0, .04);
+  --black-100: black;
+  --black-88: rgba(0, 0, 0, .88);
+  --black-80: rgba(0, 0, 0, .8);
+  --black-72: rgba(0, 0, 0, .72);
+  --black-64: rgba(0, 0, 0, .64);
+  --black-56: rgba(0, 0, 0, .56);
+  --black-48: rgba(0, 0, 0, .48);
+  --black-40: rgba(0, 0, 0, .4);
+  --black-32: rgba(0, 0, 0, .32);
+  --black-24: rgba(0, 0, 0, .24);
+  --black-16: rgba(0, 0, 0, .16);
+  --black-8-89: rgba(0, 0, 0, .08);
+}
+
+.btn-orange, .btn-green{
+  border: none;
+  background-color: var(--orange-700);
+  padding: 13px;
+  border-radius: 6px;
+  border: 1px solid var(--green-700);
+  color: var(--green-900);
+  font-weight: 500;
+  letter-spacing: -.015rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  
+}
+.btn-green:hover, .btn-orange:hover{
+  opacity: 0.7;
+}
+.btn-green{
+  background-color: var(--lime-green);
+}
+.text-green{
+  color: var(--green-900);
+}
+.text-orange{
+  color: var(--orange-700);
+}
+.text-gray{
+  color: var(--neutrals-700);
+}
+.bg-lightgreen{
+  background: var(--lime-green);
+}
+.bg-green1{
+  background-color: var(--green-500);
+}
+.bg-green2{
+  background-color: var(--green-700);
+}
+.bg-green3{
+  background-color: var(--green-900);
+}
+.bg-lightorange{
+  background: var(--okhra);
+}
+.bg-orange1{
+    background-color: var(--orange-500);
+}
+.bg-orange2{
+  background: rgba(255, 138, 74, .35);
+}
+.border-green{
+  border: 2px solid var(--green-900) !important;
+}
+
+
+/* whatsapp */
+.whatsapp{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 100;
+}
+.whatsapp img{
+  width: 60px;
+}
+
+.banner-top{
+  background: url('./assets/images/wave-haikei.svg') no-repeat center bottom;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  padding-top: 30px;
+  align-items: center;
+}
+@media(max-width:576px){
+  .banner-top{
+  justify-content: center;
+  }
+  .service-container img{
+    width: 100% !important; 
+  }
+}
+
+.form-control:focus{
+  box-shadow: none !important;
+  border: none !important;
+}

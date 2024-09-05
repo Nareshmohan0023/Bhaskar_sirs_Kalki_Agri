@@ -1,0 +1,23 @@
+.about-container .benifits{
+    border-top: 2px solid var(--green-900);
+}
+.about-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 20px;
+}
+.about-container ul li{
+    padding: 5px 10px;
+    background-color: var(--green-700);
+    color: #fff;
+    border-radius: 100px;
+}
+
+@media(max-width:576px){
+    .about-container img{
+        width: 100% !important;
+    }
+}

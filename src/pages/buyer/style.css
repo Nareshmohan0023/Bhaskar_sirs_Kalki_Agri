@@ -1,0 +1,111 @@
+.Buyer-Section{
+    /* margin-bottom: 2.4rem ; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+
+    
+
+}
+.Buyer-Section .heading{
+    text-align:center;
+    font-weight: 500;
+    color: var( --orange-700);
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+
+} 
+.Buyer-Section h3{
+    text-align: left;
+    color: var(--green-700);
+    font-weight: 600;
+   
+}
+.Buyer-Section form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+    padding: 3.2rem;
+    justify-content: center;
+    transform: translateX;
+    border: 1px solid var(--green-700);
+    box-sizing: content-box;
+    margin-bottom: 4.2rem;
+    border-radius: 9px;
+    
+
+}
+.Buyer-Section form div{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+
+
+}
+
+.Buyer-Section form div label{
+font-size: 1.3rem;
+
+}
+
+.Buyer-Section form div input{
+padding: 7px 10px;
+border-radius: 7px;
+padding-bottom: 9px;
+font-size: 1.2rem;
+
+}
+.Buyer-Section form button{
+background-color: var(--green-900);
+color: white;
+padding: 10px ;
+margin: 0px 10px;
+border-radius: 11px;
+
+} 
+.Buyer-Section form .declarion-txt{
+    display: inline;
+    color: var( --green-700);
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+input[type="checkbox"]{
+    accent-color: var(--green-900);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    transform: tr;
+    align-self:flex-start ;
+    
+}
+.Buyer-Section form div textarea{
+    
+    height: 50px;
+    text-wrap: wrap;
+    border-radius:7px ;
+    border: 1.7px solid black;
+    resize: vertical;
+    overflow-x: auto;
+    max-height: 100px;
+    min-height: 50px;
+    padding: 10px;
+}
+label[htmlFor="address"]{
+    align-self: flex-start;
+
+}
+.Agree-container{
+    display: flex;
+    align-items: center;
+    
+    gap: 20px;
+}
+.Buyer-Section form div textarea:focus,.Buyer-Section form div input:focus{
+    box-shadow: inset 0 -3px 0 var(--green-900);
+}

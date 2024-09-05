@@ -1,0 +1,14 @@
+.hero{
+    min-height: fit-content;
+    background-color:var(--okhra) ;
+    width: 100%;
+    border-bottom: 4px solid var(--green-700);
+}
+@media (max-width:576px){
+    .hero .btn-green, .hero .btn-orange{
+        width: 100%;
+    }
+    .hero img{
+        width: 100% !important;
+    }
+}
