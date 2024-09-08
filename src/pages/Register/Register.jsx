@@ -31,45 +31,45 @@ const Register = () => {
                 Register
                 </h1>
             </div> 
-            <div className="Register-Container ">
-        <form onSubmit={handleSubmit} validate>
+        <div className="Register-Container ">
+            <form onSubmit={handleSubmit} validate>
             <h1 className="Hero-Heading">Join Us and Grow Together: Be a Part of Our Community</h1>
             <div className='inputs'>
-          
-          <input
-              type="text"
-              required
-              placeholder="Name"
-              minLength={5}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-          />
-          <input
-              type="email"
-              placeholder="Email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-              type="password"
-              placeholder="Password"
-              required
-              minLength={8}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-          />
-          <select value={role}  onChange={(e) => setRole(e.target.value)}>
-              <option value="default" disabled >Buyer or Seller</option>
-              <option value="buyer">Buyer</option>
-              <option value="seller">Seller</option>
-              
-          </select></div>
             
-            <button type="submit">Register</button>
-        </form>
-                <img src={FarmerCommunity} alt="" className="Hero-img"  />
-            </div>
+            <input
+                type="text"
+                required
+                placeholder="Name"
+                minLength={5}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+            />
+            <input
+                type="email"
+                placeholder="Email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+                type="password"
+                placeholder="Password"
+                required
+                minLength={8}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+            />
+            <select value={role}  onChange={(e) => setRole(e.target.value)}>
+                <option value="default" disabled >Buyer or Seller</option>
+                <option value="buyer">Buyer</option>
+                <option value="seller">Seller</option>
+                
+            </select></div>
+                
+                <button type="submit">Register</button>
+            </form>
+            <img src={FarmerCommunity} alt="" className="Hero-img"  />
+        </div>
            
      </section>
     );

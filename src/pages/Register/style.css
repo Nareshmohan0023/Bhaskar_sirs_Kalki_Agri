@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     padding: 3.2rem;
-    width: 95%;
+    width: 90%;
     align-items: center;
     justify-content: center;
     margin: 2.4rem auto;
@@ -13,7 +13,7 @@
 }
 
 .register .Register-Container img{
-    width: 500px;
+    max-width: 90%;
     justify-self: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     border-radius: 17px;
@@ -65,5 +65,30 @@
 .Register-Container form {
     display: flex;
     flex-direction: column;
+    
+}
+
+@media(max-width:768px){
+    .register .Register-Container{
+        grid-template-columns: 1fr;
+        padding: 1.4rem;
+        font-size: 80%;
+        /* width: 5rem; */
+    }
+    .register .Register-Container h1{
+        font-size: 2.1rem;
+    }
+    .register .Register-Container .Hero-img{
+        grid-row: 1;
+
+    }
+
+}
+
+@media(max-width:576px){
+    .Register-Container form .inputs{
+        grid-template-columns: 1fr;
+    }
+
     
 }
